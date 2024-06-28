@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Point shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <div class="container flex">
+      <div class="logo-loja">
+        <a href="./">
+          <img src="./imagens/logo-cafe.png" alt="cafe logo">
+          Coffee Point
+        </a>
+        <div class="menu-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav>
+        <ul class="menu-loja">
+          <li><a href="#cafes">Cafés</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="./">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="sobre" class="sobre container">
+      <div class="sobre-img">
+        <img src="./imagens/banner-cafe.jpg" alt="tipos de café">
+      </div>
+      <div class="sobre-conteudo">
+        <h1>Sobre a Nossa Loja</h1>
+        <p>Bem-vindo ao <span>Coffee Point</span>, um refúgio de sabor e sofisticação no coração da cidade. Desde nossa inauguração, nos dedicamos a proporcionar uma experiência única e memorável para nossos clientes, combinando a arte do café de alta qualidade com um ambiente acolhedor e exclusivo.
+          Nosso compromisso com a excelência começa com a seleção dos melhores grãos de café, provenientes das mais renomadas regiões produtoras do mundo. Cada xícara servida em nosso café é o resultado de um rigoroso processo de torrefação e preparo, garantindo um sabor rico e aromático que agrada até os paladares mais exigentes.</p>
+      </div>
+    </section>
+    <section id="cafes" class="container">
+      <h2>Cafés<span>.</span></h2>
+      <div class="produto-cafe">
+        <div class="cafe">
+          <img src="./imagens/cafe-classico.jpg" alt="cafe classico">
+          <h3>Clássico Supremo</h3>
+          <p>Desfrute do sabor rico e equilibrado do nosso Café Clássico, feito com grãos selecionados e torrados à perfeição.</p>
+          <a href="#">Saiba +</a>
+        </div>
+        <div class="cafe">
+          <img src="./imagens/cafe-cap.jpg" alt="cafe classico">
+          <h3>Cappuccino Elegância</h3>
+          <p>Experimente a combinação perfeita de espresso encorpado com leite cremoso e uma camada suave de espuma no nosso delicioso Cappuccino.</p>
+          <a href="#">Saiba +</a>
+        </div>
+        <div class="cafe">
+          <img src="./imagens/macchiato.jpg" alt="cafe classico">
+          <h3>Macchiato Perfeito</h3>
+          <p>Saboreie a harmonia do espresso encorpado com um toque sutil de leite vaporizado no nosso refinado Macchiato.</p>
+          <a href="#">Saiba +</a>
+        </div>
+        <div class="cafe">
+          <img src="./imagens/frappe.jpg" alt="cafe classico">
+          <h3>Frappe Gelato</h3>
+          <p>Refresque-se com nosso Frappe gelado, uma mistura perfeita de café, leite e gelo, batido até ficar cremoso.</p>
+          <a href="#">Saiba +</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Site criado por <span>Misael Lucas</span> - 2024</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-mobile').click(function () {
+        $('nav').slideToggle();
+      })
+    })
+  </script>
+</body>
+
+</html>
